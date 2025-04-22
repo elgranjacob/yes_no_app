@@ -16,7 +16,7 @@ class MessageFieldBox extends StatelessWidget {
     );
 
     final inputDecoration = InputDecoration(
-        hintText: 'End your Message with a "??"',
+        hintText: 'End your Message with a "?"',
         enabledBorder: outlineInputBorder,
         focusedBorder: outlineInputBorder,
         filled: true,
