@@ -18,6 +18,7 @@ class MyMessageBubble extends StatelessWidget {
           decoration: BoxDecoration(
             color: colors.primary,
             borderRadius: BorderRadius.circular(20),
+            
           ),
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
@@ -28,7 +29,7 @@ class MyMessageBubble extends StatelessWidget {
           ),
         ),
         const SizedBox(
-          height: 10,
+          height: 5,
         )
       ],
     );
