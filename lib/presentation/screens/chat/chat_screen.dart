@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:yes_no_app/domain/entities/message.dart';
-import 'package:yes_no_app/presentation/Widgets/chat/her_message_bubble.dart';
-import 'package:yes_no_app/presentation/Widgets/chat/my_message_bubble.dart';
-import 'package:yes_no_app/presentation/Widgets/shared/message_field_box.dart';
 import 'package:yes_no_app/presentation/provider/provider.dart';
+import 'package:yes_no_app/presentation/screens/chat/widgets/chat/her_message_bubble.dart';
+import 'package:yes_no_app/presentation/screens/chat/widgets/chat/my_message_bubble.dart';
+import 'package:yes_no_app/presentation/screens/chat/widgets/shared/message_field_box.dart';
 
 class ChatScreen extends StatelessWidget {
   const ChatScreen({super.key});
@@ -20,7 +20,7 @@ class ChatScreen extends StatelessWidget {
                 'https://wallpapercave.com/wp/wp11464927.jpg'),
           ),
         ),
-        title: Text('mi amor'),
+        title: Text('luffy'),
         centerTitle: false,
       ),
       body: _ChatView(),

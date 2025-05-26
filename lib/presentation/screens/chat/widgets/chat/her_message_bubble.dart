@@ -14,16 +14,29 @@ final Message message;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
+         Container(
           decoration: BoxDecoration(
             color: colors.secondary,
             borderRadius: BorderRadius.circular(20),
           ),
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-            child: Text(
-              message.text,
-              style: TextStyle(color: Colors.white),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Flexible(
+                  child: Text(
+                    message.text,
+                    style: const TextStyle(color: Colors.white),
+                  ),
+                ),
+                const SizedBox(width: 8),
+                const Icon(
+                  Icons.check,
+                  size: 16,
+                  color: Colors.white70,
+                ),
+              ],
             ),
           ),
         ),
